@@ -17,6 +17,9 @@ def tangent_line(f, x):
     print(d)
     y = f(x) - d*x
     return lambda t: d*t + y
+
+def function_2(x):
+    return np.sum(x**2)
      
 x = np.arange(0.0, 20.0, 0.1)
 y = function_1(x)
@@ -28,4 +31,5 @@ y2 = tf(x)
 
 plt.plot(x, y)
 plt.plot(x, y2)
+
 plt.show()
